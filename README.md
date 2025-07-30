@@ -6,7 +6,7 @@ Predictive Pulse is a Flask web application designed to predict the blood pressu
 
 ## 👥 Team
 
-- **Atul Sharma** (Team Leader)
+- **Atul Sharma** 
 - Devang Gupta
 - Farhan Akhtar
 
