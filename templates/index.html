@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Predictive Pulse - BP Stage Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="container">
+    <h1>Predictive Pulse</h1>
+    <h3>Predict Your Blood Pressure Stage</h3>
+    <form action="/predict" method="post">
+      <label for="Gender">Gender:</label>
+      <select name="Gender" required>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+
+      <label for="Age">Age:</label>
+      <select name="Age" required>
+        <option>18-34</option>
+        <option>35-50</option>
+        <option>51-64</option>
+        <option>65+</option>
+      </select>
+
+      <label for="History">History of BP?</label>
+      <select name="History" required>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <label for="Patient">BP Patient?</label>
+      <select name="Patient" required>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <label for="TakeMedication">Taking Medication?</label>
+      <select name="TakeMedication" required>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <label for="Severity">Severity:</label>
+      <select name="Severity" required>
+        <option>Mild</option>
+        <option>Moderate</option>
+        <option>Sever</option>
+      </select>
+
+      <label for="BreathShortness">Breath Shortness?</label>
+      <select name="BreathShortness" required>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <label for="VisualChanges">Visual Changes?</label>
+      <select name="VisualChanges" required>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <label for="NoseBleeding">Nose Bleeding?</label>
+      <select name="NoseBleeding" required>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <label for="Whendiagnoused">When Diagnosed:</label>
+      <select name="Whendiagnoused" required>
+        <option>&lt;1 Year</option>
+        <option>1 - 5 Years</option>
+        <option>&gt;5 Years</option>
+      </select>
+
+      <label for="Systolic">Systolic (mmHg)</label>
+      <input type="number" name="Systolic" min="50" max="250" required>
+
+      <label for="Diastolic">Diastolic (mmHg)</label>
+      <input type="number" name="Diastolic" min="30" max="150" required>
+
+      <label for="ControlledDiet">Controlled Diet?</label>
+      <select name="ControlledDiet" required>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction_text %}
+      <div class="result">{{ prediction_text }}</div>
+    {% endif %}
+  </div>
+</body>
+</html>
