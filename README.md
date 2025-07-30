@@ -56,4 +56,5 @@ To run the Predictive Pulse application locally, follow these steps:
     python app.py
     ```
 
-4.  **Access the Application**: Open your web browser and navigate to `http://127.0.0.1:5000` to access the application.
+4.  Access the Application: [Click here](https://5799dff6-3309-4739-a27a-86a281a72773-00-ewvip8m3q4gv.sisko.replit.dev) to open the deployed app in your browser.
+
