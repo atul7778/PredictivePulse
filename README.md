@@ -58,3 +58,8 @@ To run the Predictive Pulse application locally, follow these steps:
 
 4.  **Access the Application**: Open your web browser and navigate to `http://127.0.0.1:5000` to access the application.
 
+   ## Acknowledgements
+
+This project was developed as part of the training program conducted by [SmartBridge](https://www.thesmartbridge.com/) in collaboration with SmartInternz.
+
+
