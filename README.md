@@ -20,7 +20,7 @@ Predictive Pulse is a Flask web application designed to predict the blood pressu
 - **Web Framework**: Flask
 - **Data Manipulation**: Pandas
 - **Machine Learning**: Scikit-learn
-- **Model Serialization**: Pickle (for saving trained models)
+- **Model Serialization**: Pickle
 
 ---
 
