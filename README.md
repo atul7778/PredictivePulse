@@ -1,6 +1,6 @@
 # 🩺 Predictive Pulse - Blood Pressure Prediction
 
-Predictive Pulse is a Flask web application designed to predict the blood pressure stage of users based on their symptoms, health history, and lifestyle inputs. This tool aims to provide users with insights into their blood pressure status, promoting better health management and awareness.
+Predictive Pulse is a Flask web application designed to predict the blood pressure stage of users based on their symptoms, health history, and lifestyle inputs.
 
 ---
 
